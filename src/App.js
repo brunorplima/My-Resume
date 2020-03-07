@@ -22,16 +22,16 @@ function App() {
          <SocialMedia />
          <IntroText />
 
-         <SectionHeader title="Education" />
+         <SectionHeader title="Education" id="education"/>
          <Education />
 
-         <SectionHeader title="Portfolio" />
+         <SectionHeader title="Portfolio" id="portfolio"/>
          <Portfolio />
 
-         <SectionHeader title="Skills" />
+         <SectionHeader title="Skills" id="skills"/>
          <Skills />
 
-         <SectionHeader title="Contact" />
+         <SectionHeader title="Contact" id="contact"/>
          <Contact />
 
          <Footer />

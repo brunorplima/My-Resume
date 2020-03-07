@@ -38,7 +38,7 @@ const Education = () => {
    }
 
    return (
-      <div className="edu-container">
+      <div id="education" className="edu-container">
          <div className="bcit-logo">
             <img src={bcit} alt="BCIT" />
          </div>
