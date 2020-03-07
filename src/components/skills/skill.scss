@@ -1,0 +1,26 @@
+.skill {
+   margin-bottom: 2rem;
+   width: 100%;
+
+   .percent-bg {
+      flex: 3;
+      height: .35rem;
+      margin: 0 1rem;
+      background-color: white;
+
+      .percent-actual {
+         height: 100%;
+         background: linear-gradient(178.54deg, rgba(57, 170, 128, 0.5) 0%, rgba(121, 191, 255, 0.5) 100%);
+      }
+   }
+
+   span:first-child {
+      flex: 1;
+      color: #39AA80;
+   }
+   span:last-child {
+      flex: 1;
+      font-size: .8rem;
+      color: #aaa;
+   }
+}

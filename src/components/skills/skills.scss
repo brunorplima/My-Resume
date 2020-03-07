@@ -1,0 +1,20 @@
+.skills {
+   padding: 4rem 0;
+
+   .skills-intro {
+      width: 60%;
+      text-align: center;
+      margin-bottom: 5rem;
+   }
+
+   .skills-container {
+      background-color: #eee;
+      width: 60%;
+      padding: 2rem 1rem;
+      max-width: 40rem;
+
+      .skill:last-child {
+         margin-bottom: 0;
+      }
+   }
+}

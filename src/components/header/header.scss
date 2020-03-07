@@ -1,0 +1,18 @@
+header {
+   background-color: #f4f4f4;
+   padding: .8rem 0;
+
+   nav {
+      height: 100%;
+
+
+      .router-link {
+         color: black;
+         transition: .3s;
+      }
+      .router-link:hover {
+         text-decoration: none;
+         color: #a9a9a9;
+      }
+   }
+}
