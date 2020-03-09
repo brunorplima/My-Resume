@@ -2,6 +2,7 @@
 
 .intro {
    color: white;
+   padding-top: 3rem;
 
    p {
       font-size: 12pt;
@@ -24,8 +25,11 @@
       }
 
       .profile-text {
-         // margin: 1rem;
          width: 90%;
+
+         h3 {
+            display: none;
+         }
          
          .pt-center {
             text-align: center;
@@ -34,7 +38,7 @@
    }
 
    .banner {
-      flex: 4;
+      flex: 10;
       background-image: url('../../images/js-code-bg2.jpg');
       background-size: cover;
       position: relative;
@@ -60,16 +64,48 @@
 
 
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
    .profile {
+      .profile-image {
+         width: 5rem;
 
+         img {
+            // min-height: 10rem;
+         }
+      }
    }
 
    .banner {
-      flex: 5 !important;
-      background-image: none !important;
-      h2 {
+      // flex: 5 !important;
+      // background-image: none !important;
+      h3 {
          font-size: 5pt;
+      }
+
+      .banner-text {
+         padding: 2.5rem 4rem !important;
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .profile {
+      flex: 1;
+   }
+
+   .banner {
+      flex: 7 !important;
+      // background-image: none !important;
+      h3 {
+         // font-size: 5pt;
+      }
+
+      .banner-text {
+         padding: 1.5rem 3rem !important;
+
+         h1 {
+            font-size: 35pt !important;
+         }
       }
    }
 }
