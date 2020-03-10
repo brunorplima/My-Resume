@@ -76,7 +76,7 @@ $button-hover: #296FCF;
       padding-left: 5rem;
 
       .ci-social-media {
-         width: 19rem;
+         width: 14rem;
          .ci-s {
             width: 10rem;
             font-size: 24pt;
@@ -89,5 +89,16 @@ $button-hover: #296FCF;
             }
          }
       }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .contact-form, .contact-info {
+      background-color: #ededed;
+      padding: 5rem 0;
+      width: 100% !important;
+   }
+   .contact-info {
+      margin-top: .2rem;
    }
 }

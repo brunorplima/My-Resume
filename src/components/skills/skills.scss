@@ -18,3 +18,20 @@
       }
    }
 }
+
+
+@media screen and (max-width: 768px) {
+   .skills-container {
+      width: 80% !important;
+   }
+}
+
+
+@media screen and (max-width: 576px) {
+   .skills-intro {
+      width: 80% !important;
+   }
+   .skills-container {
+      width: 90% !important;
+   }
+}

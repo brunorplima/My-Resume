@@ -66,7 +66,7 @@ const Contact = () => {
    }
 
    return (
-      <div className="contact d-flex justify-content-between">
+      <div className="contact d-flex flex-column flex-md-row justify-content-between">
          <div className="contact-form d-flex justify-content-center align-items-center">
             <form className="d-flex flex-column">
                <div className="d-flex justify-content-between">

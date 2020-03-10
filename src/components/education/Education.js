@@ -11,9 +11,9 @@ const Education = () => {
       title: 'Applied Web Development',
       period: 'Aug, 2018 - Dec, 2019',
       description: [
-         'This Associate Certificate from BCIT Computing focuses on writing code in multiple languages including Java, C#, C++, C and Swift. Elective options include QA and Agile.',
-         'Successful completion of the ASD program provides skills in IT systems analysis, requirements discovery, critical thinking, process mapping, documentation, technical communication, presentations, and team work.',
-         'Participants will gain hands-on experience and learn best practices from industry experts in the use of multiple programming languages and software development tools.'
+         'Core courses provide a solid understanding of best practices in web page design, data modelling, planning, documentation and a variety of scripting tools with an emphasis on HTML5,CSS3, JavaScript, JQuery and creating web graphics.',
+         'Elective choices include: Node.js, React and Modern JavaScript, IT Project Management, Android and Mobile Applications, and PHP.',
+         'At the end of this program, graduates will be able to develop, build and manage web sites to industry standards.'
       ]
    }
 
@@ -21,9 +21,9 @@ const Education = () => {
       title: 'Applied Software Development',
       period: 'May, 2017 - June, 2018',
       description: [
-         'Core courses provide a solid understanding of best practices in web page design, data modelling, planning, documentation and a variety of scripting tools with an emphasis on HTML5,CSS3, JavaScript, JQuery and creating web graphics.',
-         'Elective choices include: Node.js, React and Modern JavaScript, IT Project Management, Android and Mobile Applications, and PHP.',
-         'At the end of this program, graduates will be able to develop, build and manage web sites to industry standards.'
+         'This Associate Certificate from BCIT Computing focuses on writing code in multiple languages including Java, C#, C++, C and Swift. Elective options include QA and Agile.',
+         'Successful completion of the ASD program provides skills in IT systems analysis, requirements discovery, critical thinking, process mapping, documentation, technical communication, presentations, and team work.',
+         'Participants will gain hands-on experience and learn best practices from industry experts in the use of multiple programming languages and software development tools.'
       ]
    }
 

@@ -16,7 +16,7 @@ const Credential = props => {
          </div>
          {
             props.description.map((desc, i) => {
-               return <p key={i}>{desc}</p>
+               return <p key={i} className="program-description">{desc}</p>
             })
          }
          {/* <p>{props.description}</p> */}

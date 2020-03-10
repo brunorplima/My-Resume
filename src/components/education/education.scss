@@ -37,3 +37,13 @@
       }
    }
 }
+
+@media screen and (max-width: 540px) {
+   .edu-container {
+      padding: 1rem;
+
+      .bcit-credentials {
+         padding-left: 0;
+      }
+   }
+}

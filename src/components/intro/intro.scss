@@ -109,3 +109,28 @@
       }
    }
 }
+
+@media screen and (max-width: 768px) { 
+   main {
+      flex-direction: column;
+
+      .profile {
+
+         .profile-text {
+            text-align: center;
+
+            h3 {
+               display: block !important;
+            }
+         }
+      }
+
+      
+   }
+   .banner {
+         
+      height: 15rem !important;
+      z-index: 5;
+      // padding: 5rem 0;
+   }
+}

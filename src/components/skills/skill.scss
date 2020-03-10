@@ -24,3 +24,33 @@
       color: #aaa;
    }
 }
+
+
+@media screen and (max-width: 670px) {
+   .skill {
+      .percent-bg {
+         flex: 5 !important;
+      }
+      span:first-child {
+         flex: 2;
+      }
+      span:last-child {
+         flex: 1;
+      }
+   }
+}
+
+
+@media screen and (max-width: 500px) {
+   .skill {
+      .percent-bg {
+         flex: 2 !important;
+      }
+      span:first-child {
+         flex: 1;
+      }
+      span:last-child {
+         display: none;
+      }
+   }
+}

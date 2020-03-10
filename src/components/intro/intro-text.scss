@@ -9,3 +9,12 @@
       text-align: center;
    }
 }
+
+@media screen and (max-width: 768px) {
+   .intro-text {
+      p {
+         width: 75% !important;
+         padding: 2rem 0;
+      }
+   }
+}

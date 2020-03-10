@@ -17,24 +17,25 @@ function App() {
    return (
       <div className="App">
          <Header />
+         <div className="translate">
+            <Intro />
+            <SocialMedia />
+            <IntroText />
 
-         <Intro />
-         <SocialMedia />
-         <IntroText />
+            <SectionHeader title="Education" id="education"/>
+            <Education />
 
-         <SectionHeader title="Education" id="education"/>
-         <Education />
+            <SectionHeader title="Portfolio" id="portfolio"/>
+            <Portfolio />
 
-         <SectionHeader title="Portfolio" id="portfolio"/>
-         <Portfolio />
+            <SectionHeader title="Skills" id="skills"/>
+            <Skills />
 
-         <SectionHeader title="Skills" id="skills"/>
-         <Skills />
+            <SectionHeader title="Contact" id="contact"/>
+            <Contact />
 
-         <SectionHeader title="Contact" id="contact"/>
-         <Contact />
-
-         <Footer />
+            <Footer />
+         </div>
       </div>
    );
 }

@@ -1,15 +1,20 @@
 .portfolio-container {
-   padding: 10rem 10rem;
+   padding: 10rem 0;
    background: linear-gradient(125deg, rgba(57, 170, 128, 0.5) 0%, rgba(121, 191, 255, 0.5) 100%);
 
-   .work-container {
-      width: 20rem;
-      height: 20rem;
+   .work-container, .project-details {
       background-color: white;
       box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
       cursor: pointer;
-      padding: 1rem;
       transition: .4s;
+   }
+   .work-container {
+      width: 20rem;
+      height: 20rem;
+      
+      color: black;
+      text-decoration: none;
+      padding: 1rem;
       .ip-logo {
          width: 6rem;
       }
@@ -28,5 +33,22 @@
    }
    .work-container:hover {
       box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.25);
+   }
+
+   .project-details {
+      margin-top: 2.5rem;
+      background-color: white;
+      padding: 1rem 0;
+      font-size: 15pt;
+   }
+   .project-details:hover{
+      box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.25);
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   .work-container:first-child {
+      // margin-bottom: 10rem !important;
    }
 }
