@@ -8,9 +8,9 @@ const SocialMedia = () => {
    return (
       <div className="social-media d-flex justify-content-center align-items-center">
          <div className="social-media-imgs d-flex justify-content-around">
-            <FaLinkedin className="sm-icons fa-linkedin"/>
-            <FaFacebookSquare className="sm-icons fa-facebook"/>
-            <TiSocialInstagram className="sm-icons ti-insta" style={{fontSize: '45px', transform: 'translateY(-3px)'}}/>
+            <a href="https://www.linkedin.com/mwlite/in/bruno-lima-673955159" target="_blank" rel="noopener noreferrer" ><FaLinkedin className="sm-icons fa-linkedin"/></a>
+            <a href="https://www.facebook.com/profile.php?id=100002401369385&ref=bookmarks" target="_blank" rel="noopener noreferrer" ><FaFacebookSquare className="sm-icons fa-facebook"/></a>
+            <a href="https://www.instagram.com/bruno.fg58/?hl=en" target="_blank" rel="noopener noreferrer" ><TiSocialInstagram className="sm-icons ti-insta" style={{fontSize: '45px', transform: 'translateY(-3px)'}}/></a>
          </div>
       </div>
    )
