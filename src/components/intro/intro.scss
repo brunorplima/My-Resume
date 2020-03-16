@@ -10,7 +10,7 @@
 
    .profile {
       flex: 1;
-      background-color: rgba(57, 170, 128, .7);
+      background-color: rgba(70, 183, 141, .85);
       padding: 2rem;
 
       .profile-image {
@@ -42,6 +42,7 @@
       background-image: url('../../images/js-code-bg2.jpg');
       background-size: cover;
       position: relative;
+      min-height: 20rem;
 
       .opacity-overlay {
          position: absolute;
