@@ -19,5 +19,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-   padding: 0 2rem !important;
+   footer{
+      padding: 0 2rem !important;
+   }
 }
