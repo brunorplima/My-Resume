@@ -73,19 +73,26 @@ $button-hover: #296FCF;
 
 
    .contact-info {
-      padding-left: 5rem;
+      // padding-left: 5rem;
 
       .ci-social-media {
          width: 14rem;
          .ci-s {
             width: 10rem;
             font-size: 24pt;
-            span {
-               cursor: pointer;
-               transition: .2s;
+            a {
+               color: black;
+               span {
+                  cursor: pointer;
+                  transition: .2s;
+               }
+               span:hover {
+                  color: #777;
+               }
             }
-            span:hover {
-               color: #777;
+            a:last-child {
+               font-size: 2.2rem;
+               transform: translateY(-.15rem);
             }
          }
       }
@@ -100,5 +107,7 @@ $button-hover: #296FCF;
    }
    .contact-info {
       margin-top: .2rem;
+      padding: 5rem .5rem !important;
+      justify-content: center !important;
    }
 }

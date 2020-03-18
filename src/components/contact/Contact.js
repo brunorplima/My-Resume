@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DownloadCVButton from '../util/DownloadCVButton';
 import { FaLinkedin, FaFacebookSquare } from 'react-icons/fa';
 import { TiSocialInstagram } from 'react-icons/ti';
 
@@ -51,12 +52,6 @@ const Contact = () => {
          setStatus(_status.invalid);
          resetStatus(25000);
       }
-
-      // if (status !== _status.inactive) {
-      //    setTimeout(() => {
-      //       setStatus(_status.inactive);
-      //    }, 2000);
-      // }
    }
 
    const resetStatus = time => {
@@ -69,6 +64,7 @@ const Contact = () => {
       <div className="contact d-flex flex-column flex-md-row justify-content-between">
          <div className="contact-form d-flex justify-content-center align-items-center">
             <form className="d-flex flex-column">
+               <legend>Send me a message!</legend>
                <div className="d-flex justify-content-between">
                   <input type="input" name="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} style={!name && status === 'invalid' ? {border: '1.5px solid red'} : {}}/>
                   <input type="input" name="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} style={!email && status === 'invalid' ? {border: '1.5px solid red'} : {}}/>
@@ -99,24 +95,35 @@ const Contact = () => {
             </form>
          </div>
 
-         <div className="contact-info d-flex flex-column justify-content-between">
-            <div className="ci-text d-flex flex-column">
-               <h2 className="mb-0">Bruno Lima</h2>
-               <span className="lead">Front-End Developer</span>
-               <div className="p-3"></div>
-               <span className="font-weight-bold">Email:</span>
-               <span>brunolima.cad@gmail.com</span>
-               <span>bruno.reactdeveloper@gmail.com</span>
-               <div className="p-2"></div>
-               <span className="font-weight-bold">Phone:</span>
-               <span>(778) 682 7766</span>
-            </div>
+         <div className="contact-info d-flex flex-column align-items-center">
+            <div>
+               <div className="ci-text d-flex flex-column">
+                  <h2 className="mb-0">Bruno Lima</h2>
+                  <span className="lead">Front-End Developer</span>
+                  <div className="p-3"></div>
+                  <span className="font-weight-bold">Email:</span>
+                  <span>brunolima.cad@gmail.com</span>
+                  <span>bruno.reactdeveloper@gmail.com</span>
+                  <div className="p-2"></div>
+                  <span className="font-weight-bold">Phone:</span>
+                  <span>(778) 682 7766</span>
+                  <div className="p-2"></div>
+                  <DownloadCVButton color="black" hover="hover2"/>
+                  <div className="p-2"></div>
+               </div>
 
-            <div className="ci-social-media border border-info border-bottom-0 border-left-0 border-right-0">
-               <div className="ci-s d-flex justify-content-between">
-                  <span><FaLinkedin /></span>
-                  <span><FaFacebookSquare /></span>
-                  <span><TiSocialInstagram /></span>
+               <div className="ci-social-media border border-info border-bottom-0 border-left-0 border-right-0">
+                  <div className="ci-s d-flex justify-content-between">
+                     <a href="https://www.linkedin.com/mwlite/in/bruno-lima-673955159" target="_blank" rel="noopener noreferrer">
+                        <span><FaLinkedin /></span>
+                     </a>
+                     <a href="https://www.facebook.com/profile.php?id=100002401369385&ref=bookmarks" target="_blank" rel="noopener noreferrer" >
+                        <span><FaFacebookSquare /></span>
+                     </a>
+                     <a href="https://www.instagram.com/bruno.fg58/?hl=en" target="_blank" rel="noopener noreferrer" >
+                        <span><TiSocialInstagram /></span>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
