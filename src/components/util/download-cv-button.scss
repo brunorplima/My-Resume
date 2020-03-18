@@ -1,0 +1,24 @@
+.down-button {
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: .3s;
+   border-radius: 5px;
+   span:first-child {
+      padding-right: 1rem;
+   }
+}
+.down-button:hover {
+   text-decoration: inherit;
+   color: inherit;
+}
+
+.hover1:hover {
+   background-color: rgba($color: #fff, $alpha: .2);
+}
+
+.hover2:hover {
+   background-color: rgba($color: #fff, $alpha: .8);
+}
