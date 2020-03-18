@@ -1,9 +1,10 @@
 import React from 'react';
+import DownloadCVButton from '../util/DownloadCVButton';
 import profile from '../../images/profile_image_cropped.jpg';
 
 import './intro.scss';
 
-const Intro = () => {
+const Intro = props => {
    return (
       <main id="intro" className="intro d-flex">
          <div className="profile d-flex flex-column align-items-center">
@@ -27,6 +28,7 @@ const Intro = () => {
                <h1>Bruno Lima</h1>
                <h2>Front-End developer</h2>
             </div>
+            <DownloadCVButton className="download-button" hover="hover1" absolute top="4rem" right="4rem"/>
          </div>
       </main>
    )
