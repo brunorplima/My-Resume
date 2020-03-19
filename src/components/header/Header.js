@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { IoIosMenu, IoMdClose } from 'react-icons/io';
+import logo from '../../images/logo-icone-azul.png';
 
 import './header.scss';
 
@@ -17,7 +18,7 @@ const Header = () => {
       <header id="navbar" className="container-fluid" style={position <= 300 ? {padding: '.8rem 0'} : {}}>
          <div className="row justify-content-between">
             <div className="col-1 offset-1">
-               <h1>BL</h1>
+               <img src={logo} alt="Bruno Lima logo" style={position > 300 ? {width: '2rem'} : {}}/>
             </div>
 
             <div className="col-9 col-md-8 col-lg-8">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DownloadCVButton from '../util/DownloadCVButton';
 import { FaLinkedin, FaFacebookSquare } from 'react-icons/fa';
 import { TiSocialInstagram } from 'react-icons/ti';
+import logo from '../../images/logo-bg-vbruno2.png';
 
 import './contact.scss'
 
@@ -98,8 +99,14 @@ const Contact = () => {
          <div className="contact-info d-flex flex-column align-items-center">
             <div>
                <div className="ci-text d-flex flex-column">
-                  <h2 className="mb-0">Bruno Lima</h2>
-                  <span className="lead">Front-End Developer</span>
+                  <div className="d-flex">
+                     <img src={logo} alt="Logo" className="logo-img" />
+                     <div>
+                        <h2 className="mb-0">Bruno Lima</h2>
+                        <span className="lead">Front-End Developer</span>
+                     </div>
+                  </div>
+                  
                   <div className="p-3"></div>
                   <span className="font-weight-bold">Email:</span>
                   <span>brunolima.cad@gmail.com</span>

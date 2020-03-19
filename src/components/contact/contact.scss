@@ -74,9 +74,16 @@ $button-hover: #296FCF;
 
    .contact-info {
       // padding-left: 5rem;
+      .ci-text {
+         .logo-img {
+            width: 5rem;
+            height: auto;
+            margin-right: 2rem;
+         }
+      }
 
       .ci-social-media {
-         width: 14rem;
+         width: 17rem;
          .ci-s {
             width: 10rem;
             font-size: 24pt;
