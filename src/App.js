@@ -10,8 +10,8 @@ import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; 
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
    return (
