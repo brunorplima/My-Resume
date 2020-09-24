@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaFileDownload, FaDownload } from 'react-icons/fa'
-import cv from '../../images/profile_image_cropped.jpg'
+import { FaFileDownload } from 'react-icons/fa'
 
 import './download-cv-button.scss';
 
@@ -19,13 +18,8 @@ const DownloadCVButton = props => {
       zIndex: 3
    }
 
-   const handleDownload = () => {
-
-      console.log(props.color)
-   }
-
    return (
-      <a href="d" className={hover} style={style} onClick={e => handleDownload(e)} download={cv} content-type="image/jpeg">
+      <a href={process.env.PUBLIC_URL + '/Resume.pdf'} target="_blank" rel="noopener noreferrer" className={hover} style={style}>
          <span><FaFileDownload /></span>
          <span>Download CV</span>
       </a>
