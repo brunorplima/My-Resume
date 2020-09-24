@@ -4,7 +4,7 @@ import { FaLinkedin, FaFacebookSquare } from 'react-icons/fa';
 import { TiSocialInstagram } from 'react-icons/ti';
 import logo from '../../images/logo-bg-vbruno2.png';
 
-import './contact.scss'
+import './contact.scss';
 
 const _status = {
    inactive: 'inactive',
@@ -22,7 +22,7 @@ const Contact = () => {
    const [message, setMessage] = useState('');
    const [status, setStatus] = useState(_status.inactive);
    const [error, setError] = useState('');
-   
+   console.log(process.env.REACT_APP_USER_ID)
    const handleSendButton = (e) => {
       e.preventDefault();
 
@@ -33,7 +33,12 @@ const Contact = () => {
             subject: subject,
             message: message
          }
-         window.emailjs.send('default_service', 'contact_my_resume', params)
+         window.emailjs.send(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            params,
+            process.env.REACT_APP_USER_ID
+         )
             .then(response => {
                setStatus(_status.sent);
                setName('');
@@ -43,9 +48,10 @@ const Contact = () => {
                resetStatus(10000);
             }, 
             error => {
-               console.log('Error: ' + error);
+               console.log('Error: ');
+               console.log(error);
                setStatus(_status.error);
-               setError(error);
+               setError(error.text);
                resetStatus(25000);
             })
       } else {
@@ -67,11 +73,11 @@ const Contact = () => {
             <form className="d-flex flex-column">
                <legend>Send me a message!</legend>
                <div className="d-flex justify-content-between">
-                  <input type="input" name="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} style={!name && status === 'invalid' ? {border: '1.5px solid red'} : {}}/>
-                  <input type="input" name="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} style={!email && status === 'invalid' ? {border: '1.5px solid red'} : {}}/>
+                  <input type="input" name="name" placeholder="Name" value={name} onChange={e => setName(e.target.value)} style={!name && status === _status.invalid ? {border: '1.5px solid red'} : {}}/>
+                  <input type="email" name="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} style={!email && status === _status.invalid ? {border: '1.5px solid red'} : {}}/>
                </div>
-               <input type="input" name="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} style={!subject && status === 'invalid' ? {border: '1.5px solid red'} : {}}/>
-               <textarea name="message" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} style={!message && status === 'invalid' ? {border: '1.5px solid red'} : {}}></textarea>
+               <input type="input" name="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} style={!subject && status === _status.invalid ? {border: '1.5px solid red'} : {}}/>
+               <textarea name="message" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} style={!message && status === _status.invalid ? {border: '1.5px solid red'} : {}}></textarea>
                <button onClick={(e) => handleSendButton(e)}>Send</button>
                
                {status === _status.sent ?
