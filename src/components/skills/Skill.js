@@ -9,7 +9,6 @@ const Skill = props => {
          <div className="percent-bg">
             <div className="percent-actual" style={{width: props.width}}></div>
          </div>
-         <span>{props.time} exp</span>
       </div>
    )
 }
