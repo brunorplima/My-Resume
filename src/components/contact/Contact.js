@@ -32,7 +32,7 @@ const Contact = () => {
             to_email: email,
             subject: subject,
             message: message
-            }
+         }
          window.emailjs.send('default_service', 'contact_my_resume', params)
             .then(response => {
                setStatus(_status.sent);
