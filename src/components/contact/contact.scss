@@ -15,9 +15,6 @@ $button-hover: #296FCF;
          width: 80%;
          max-width: 520px;
 
-         input {
-         }
-
          input, textarea {
             border: none;
             padding: .5rem;
@@ -77,7 +74,7 @@ $button-hover: #296FCF;
       .ci-text {
          .logo-img {
             width: 5rem;
-            height: auto;
+            height: 5rem;
             margin-right: 2rem;
          }
       }

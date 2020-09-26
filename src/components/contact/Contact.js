@@ -22,7 +22,6 @@ const Contact = () => {
    const [message, setMessage] = useState('');
    const [status, setStatus] = useState(_status.inactive);
    const [error, setError] = useState('');
-   console.log(process.env.REACT_APP_USER_ID)
    const handleSendButton = (e) => {
       e.preventDefault();
 
