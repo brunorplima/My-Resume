@@ -6,12 +6,15 @@ header {
    z-index: 3;
    border-bottom: 1px solid #ccc;
 
-   img {
-      width: 2.5rem;
-      margin: .5rem 0;
-      margin-top: .4rem;
-      user-select: none;
-      transition: .5s;
+   .div-img {
+      z-index: 4;
+      img { 
+         width: 2.5rem;
+         margin: .5rem 0;
+         margin-top: .4rem;
+         user-select: none;
+         transition: .5s;
+      }
    }
 
    nav {
@@ -20,7 +23,7 @@ header {
 
       .router-link {
          color: black;
-         transition: .4s;
+         transition: .2s;
          cursor: pointer;
          user-select: none;
       }
@@ -33,6 +36,7 @@ header {
    }
    .menu-icon-container {
       .menu-icon {
+         z-index: 2;
          font-size: 30pt;
          padding-right: 1rem;
          cursor: pointer;
@@ -46,11 +50,33 @@ header {
    background-color: #f4f4f4;
    height: 100vh;
    width: 100%;
+   left: 0;
+   transform: translateX(150rem);
+   animation-duration: .3s;
+   animation-fill-mode: ease-out;
+   z-index: 4;
    nav {
       margin-top: 3rem;
       .router-link {
          margin-bottom: 1.5rem;
       }
+   }
+}
+
+@keyframes slide-in {
+   0% {
+      transform: translateX(150rem);
+   }
+   100% {
+      transform: translateX(0rem);
+   }
+}
+@keyframes slide-out {
+   0% {
+      transform: translateX(0rem);
+   }
+   100% {
+      transform: translateX(150rem);
    }
 }
 
