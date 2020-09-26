@@ -1,0 +1,72 @@
+.project-portal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 5;
+   animation-name: fade-in;
+   animation-duration: .3s;
+   animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.project-details {
+   width: 30vw;
+   max-height: 100vh;
+   background-color: white;
+
+   .close-bar {
+      height: 1.5rem;
+      width: 100%;
+      background-color: #dedede;
+      border-bottom: 1px solid gray;
+
+      .close-icon {
+         width: 2.5rem;
+         border-left: 1px solid gray;
+         cursor: pointer;
+      }
+   }
+
+   img {
+      float: left;
+      width: 12rem;
+      margin-right: 1rem;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   .project-details {
+      width: 40vw;
+   }
+}
+@media only screen and (max-width: 750px) {
+   .project-details {
+      width: 50vw;
+   }
+}
+@media only screen and (max-width: 600px) {
+   .project-details {
+      width: 60vw;
+   }
+}
+@media only screen and (max-width: 500px) {
+   .project-details {
+      width: 70vw;
+   }
+}
+@media only screen and (max-width: 400px) {
+   .project-details {
+      width: 80vw;
+   }
+}
