@@ -1,0 +1,52 @@
+.project-container {
+   width: 17rem;
+   min-height: 20rem;
+   padding: .5rem;
+   flex-wrap: wrap;
+   margin-bottom: 2rem;
+
+   .project {
+      background-color: white;
+      height: 100%;
+      border-radius: .4rem;
+      overflow: hidden;
+
+      .project-image {
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 12rem;
+         position: relative;
+
+         .pi-layer {
+            position: absolute;
+            top: 0vh;
+            left: 0vw;
+            width: 100%;
+            height: 100%;
+         }
+      }
+
+      .project-text {
+         padding: 1rem .2rem;
+         flex: 1;
+
+         .read-more {
+            padding: .7rem;
+            border: 1.5px solid;
+            cursor: pointer;
+            width: 10rem;
+            align-self: center;
+            margin-top: .5rem;
+            border-radius: 4rem;
+            transition: .3s;
+            color: #004bcf;
+
+            &:hover {
+               background-color: #007bff;
+               color: white;
+            }
+         }
+      }
+   }
+}
