@@ -29,7 +29,7 @@ const ProjectPortal = ({ setIsOpen, info, img }) => {
                <h2>{info.name}</h2>
                <p>{info.summary}</p>
                <p>Git repository: {info.gitLink}</p>
-               <p>Visit the project's <a href={info.link} target='_blank'>website</a></p>
+               <p>Visit the project's <a href={info.link} target='_blank' rel="noopener noreferrer">website</a></p>
             </div>
          </div>
       </div>,
