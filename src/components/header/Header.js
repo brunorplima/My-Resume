@@ -15,12 +15,6 @@ const Header = () => {
       setPosition(window.scrollY)
    })
 
-   function clickLink() {
-      if (menuPressed) {
-
-      }
-   }
-
    function clickMenu() {
       if (menuPressed) {
          setStyle({
