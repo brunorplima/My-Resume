@@ -1,6 +1,10 @@
 .portfolio-container {
-   padding: 10rem 0;
+   padding: 8rem 0;
    background: linear-gradient(125deg, rgba(57, 170, 128, 0.5) 0%, rgba(121, 191, 255, 0.5) 100%);
+
+   .portfolio {
+      width: 85%;
+   }
 
    .work-container, .project-details {
       background-color: white;
@@ -48,8 +52,3 @@
 }
 
 
-@media screen and (max-width: 768px) {
-   .work-container:first-child {
-      // margin-bottom: 10rem !important;
-   }
-}
