@@ -10,7 +10,7 @@
 
    .profile {
       flex: 1;
-      background-color: rgba(70, 183, 141, .85);
+      background-color: rgba(0, 110, 70, 0.85);
       padding: 2rem;
 
       .profile-image {
@@ -69,10 +69,6 @@
    .profile {
       .profile-image {
          width: 5rem;
-
-         img {
-            // min-height: 10rem;
-         }
       }
    }
 
@@ -96,10 +92,6 @@
 
    .banner {
       flex: 7 !important;
-      // background-image: none !important;
-      h3 {
-         // font-size: 5pt;
-      }
 
       .banner-text {
          padding: 1.5rem 3rem !important;
