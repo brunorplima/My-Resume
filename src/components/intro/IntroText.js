@@ -5,7 +5,7 @@ import './intro-text.scss';
 const IntroText = () => {
    return (
       <div className="intro-text d-flex justify-content-center align-items-center ps-1">
-         <p>Recently graduated on software and web development, acquired interest and experience working with front-end technologies such as HTML, CSS, Javascript and React. Seeking a position as a front-end web and app developer using libraries like React and React Native, aiming the leverage of problem solving, logic, design and communication skills for mutual benefit.</p>
+         <p>Hard-working web developer with ability to create elegant solutions using industry programming standards. Developed an ecommerce webapp for Inheritance Publications resulting in 100% positive feedbacks from customers, and a minesweeper game for my siblings, friends and myself. Passionate about front-end development, and the quick and beautiful results that come from it.</p>
       </div>
    )
 }

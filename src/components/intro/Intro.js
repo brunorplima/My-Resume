@@ -14,8 +14,7 @@ const Intro = props => {
             <div className="profile-text">
                <h3 className="pt-center">Bruno Lima</h3>
                <p>Certified in Applied Software and Web Development at BCIT</p>
-               <p>Focused on React development</p>
-               <p>Looking for first experience as a React developer</p>
+               <p>Focused on React web app development</p>
                <p className="pt-center">brunolima.cad@gmail.com</p>
                <p className="pt-center">(778) 682 7766</p>
             </div>
