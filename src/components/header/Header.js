@@ -18,13 +18,13 @@ const Header = () => {
    function clickMenu() {
       if (menuPressed) {
          setStyle({
-            transform: 'translateX(60rem)',
+            transform: 'translateX(3000px)',
             animationName: 'slide-out'
          });
          setMenuPressed(false);
       } else {
          setStyle({
-            transform: 'translateX(0rem)',
+            transform: 'translateX(0)',
             animationName: 'slide-in'
          })
          setMenuPressed(true);
@@ -40,11 +40,12 @@ const Header = () => {
 
             <div className="col-9 col-md-8 col-lg-8">
                <nav className="justify-content-around align-items-center d-none d-md-flex">
-                  <Link to="intro" smooth={true} duration={600} className="router-link d-none d-md-block">INTRO</Link>
+                  <Link to="intro" smooth={true} duration={700} className="router-link d-none d-md-block">INTRO</Link>
                   <Link to="education" smooth={true} duration={700} className="router-link d-none d-md-block">EDUCATION</Link>
-                  <Link to="portfolio" smooth={true} duration={800} className="router-link d-none d-md-block">PORTFOLIO</Link>
-                  <Link to="skills" smooth={true} duration={900} className="router-link d-none d-md-block">SKILLS</Link>
-                  <Link to="contact" smooth={true} duration={1000} className="router-link d-none d-md-block">CONTACT</Link>
+                  <Link to="skills" smooth={true} duration={700} className="router-link d-none d-md-block">SKILLS</Link>
+                  <Link to="experience" smooth={true} duration={700} className="router-link d-none d-md-block">EXPERIENCE</Link>
+                  <Link to="portfolio" smooth={true} duration={700} className="router-link d-none d-md-block">PORTFOLIO</Link>
+                  <Link to="contact" smooth={true} duration={700} className="router-link d-none d-md-block">CONTACT</Link>
                </nav>
 
                <div className="menu-icon-container d-flex d-md-none justify-content-end">
@@ -61,10 +62,11 @@ const Header = () => {
          <div className="nav-screen" style={style}>
             <nav className="d-flex flex-column align-items-center">
                <Link to="intro" smooth={true} duration={600} className="router-link" onClick={() => clickMenu()}>INTRO</Link>
-               <Link to="education" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>EDUCATION</Link>
-               <Link to="portfolio" smooth={true} duration={800} className="router-link" onClick={() => clickMenu()}>PORTFOLIO</Link>
-               <Link to="skills" smooth={true} duration={900} className="router-link" onClick={() => clickMenu()}>SKILLS</Link>
-               <Link to="contact" smooth={true} duration={1000} className="router-link" onClick={() => clickMenu()}>CONTACT</Link>
+               <Link to="education" smooth={true} duration={300} className="router-link" onClick={() => clickMenu()}>EDUCATION</Link>
+               <Link to="skills" smooth={true} duration={800} className="router-link" onClick={() => clickMenu()}>SKILLS</Link>
+               <Link to="portfolio" smooth={true} duration={900} className="router-link" onClick={() => clickMenu()}>EXPERIENCE</Link>
+               <Link to="portfolio" smooth={true} duration={1000} className="router-link" onClick={() => clickMenu()}>PORTFOLIO</Link>
+               <Link to="contact" smooth={true} duration={2100} className="router-link" onClick={() => clickMenu()}>CONTACT</Link>
             </nav>
          </div>
       </header>
