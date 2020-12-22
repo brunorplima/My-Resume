@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .sh-container {
    border-top: 3px solid #ccc;
    border-bottom: 3px solid #ccc;
+   position: relative;
+
+   .scroll-to {
+      position: absolute;
+      top: -60px;
+   }
 
    h2 {
       font-size: 20pt;
       margin-bottom: 0;
+      font-family: 'Comfortaa', cursive;
+      text-shadow: 1px 2px 2px #666;
    }
 }
