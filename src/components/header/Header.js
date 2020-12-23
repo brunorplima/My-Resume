@@ -61,12 +61,12 @@ const Header = () => {
 
          <div className="nav-screen" style={style}>
             <nav className="d-flex flex-column align-items-center">
-               <Link to="intro" smooth={true} duration={600} className="router-link" onClick={() => clickMenu()}>INTRO</Link>
-               <Link to="education" smooth={true} duration={300} className="router-link" onClick={() => clickMenu()}>EDUCATION</Link>
-               <Link to="skills" smooth={true} duration={800} className="router-link" onClick={() => clickMenu()}>SKILLS</Link>
-               <Link to="portfolio" smooth={true} duration={900} className="router-link" onClick={() => clickMenu()}>EXPERIENCE</Link>
-               <Link to="portfolio" smooth={true} duration={1000} className="router-link" onClick={() => clickMenu()}>PORTFOLIO</Link>
-               <Link to="contact" smooth={true} duration={2100} className="router-link" onClick={() => clickMenu()}>CONTACT</Link>
+               <Link to="intro" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>INTRO</Link>
+               <Link to="education" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>EDUCATION</Link>
+               <Link to="skills" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>SKILLS</Link>
+               <Link to="portfolio" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>EXPERIENCE</Link>
+               <Link to="portfolio" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>PORTFOLIO</Link>
+               <Link to="contact" smooth={true} duration={700} className="router-link" onClick={() => clickMenu()}>CONTACT</Link>
             </nav>
          </div>
       </header>
