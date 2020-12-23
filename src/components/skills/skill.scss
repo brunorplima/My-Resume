@@ -1,27 +1,61 @@
-.skill {
-   margin-bottom: 2rem;
-   width: 100%;
+@keyframes fillBlank {
+   from {
+      transform: translateX(-100%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}
 
-   .percent-bg {
-      flex: 3;
-      height: .35rem;
-      margin: 0 1rem;
-      background-color: white;
 
-      .percent-actual {
+.dv-skill-container {
+   width: 280px;
+   height: 50px;
+   border-radius: .5rem;
+   border: 1px solid #888;
+   overflow: hidden;
+   margin-bottom: 1rem;
+
+   h4 {
+      margin-bottom: 0;
+   }
+
+   .dv-s-image {
+      flex: 1;
+      font-size: 22pt;
+      position: relative;
+
+      .dv-s-shadow {
+         width: 15px;
+         background: linear-gradient(to left, #9dd795, rgba(255,255,255, 0));
+         position: absolute;
          height: 100%;
-         background: linear-gradient(178.54deg, rgba(57, 170, 128, 0.5) 0%, rgba(121, 191, 255, 0.5) 100%);
+         top: 0;
+         right: 0;
       }
    }
 
-   span:first-child {
-      flex: 1;
-      color: #097A50;
-   }
-   span:last-child {
-      flex: 1;
-      font-size: .8rem;
-      color: #aaa;
+   .dv-s-skill {
+      flex: 3;
+      background-color: white;
+      position: relative;
+      overflow: hidden;
+
+      .dv-skill-pc {
+         position: absolute;
+         height: 100%;
+         left: 0;
+         background-color: #9dd795;
+         z-index: 0;
+      }
+
+      .fill-blank-anim {
+         animation: fillBlank 1.3s ease-out;
+      }
+
+      h4 {
+         z-index: 2;
+      }
    }
 }
 
