@@ -19,7 +19,7 @@ const DownloadCVButton = props => {
    }
 
    return (
-      <a href={process.env.PUBLIC_URL + '/Resume.pdf'} target="_blank" rel="noopener noreferrer" className={hover} style={style}>
+      <a href={process.env.PUBLIC_URL + '/Bruno_Lima_Resume.pdf'} target="_blank" rel="noopener noreferrer" className={hover} style={style}>
          <span><FaFileDownload /></span>
          <span>Download CV</span>
       </a>
