@@ -18,3 +18,11 @@
       }
    }
 }
+
+@media screen and (max-width: 550px) {
+   .intro-text {
+      p {
+         font-size: 15pt;
+      }
+   }
+}
