@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { SiCss3 } from 'react-icons/si';
 import { SiHtml5 } from 'react-icons/si';
-import { SiJavascript } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiNextDotJs } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { DiGit } from 'react-icons/di';
@@ -41,6 +41,10 @@ const Skill = ({ skill, image, bgColor, icon, iconColor, fontSize, isLast, level
             return <FaReact />;
          case 'git':
             return <DiGit />;
+         case 'ts':
+            return <SiTypescript />;
+         case 'nextjs':
+            return <SiNextDotJs />
          default:
             console.error('getIcon() should not get to default!');
             return null;
@@ -65,11 +69,3 @@ const Skill = ({ skill, image, bgColor, icon, iconColor, fontSize, isLast, level
 }
 
 export default Skill
-
-
-      // <div className="skill d-flex justify-content-between align-items-center">
-      //    <span>{props.skill}</span>
-      //    <div className="percent-bg">
-      //       <div className="percent-actual" style={{width: props.width}}></div>
-      //    </div>
-      // </div>

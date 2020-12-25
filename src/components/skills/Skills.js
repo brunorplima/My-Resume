@@ -37,8 +37,10 @@ const Skills = () => {
                   <Skill skill="CSS/SCSS" icon='css' iconColor='#2965f1' bgColor='#D8D8D8' level='70%' />
                   <Skill skill="HTML" icon='html' iconColor='#e34c26' bgColor='#FFFFEA' level='80%' />
                   <Skill skill="Javascript/ES6" icon='js' iconColor='#f0db4f' bgColor='#333' level='85%' />
-                  <Skill skill="NoSQL" icon='nosql' iconColor='white' bgColor='#00CECB' level='70%' />
+                  <Skill skill="Typescript" icon='ts' iconColor='#007acc' bgColor='#fff' level='75%' />
+                  <Skill skill="Next.js" icon='nextjs' iconColor='#333' bgColor='#efc' level='75%' />
                   <Skill skill="React" icon='react' iconColor='#61DBFB' bgColor='#333' level='90%' />
+                  <Skill skill="NoSQL" icon='nosql' iconColor='white' bgColor='#00CECB' level='70%' />
                   <Skill skill="Git" icon='git' iconColor='#f34f29' bgColor='#5d4d20' fontSize='36pt' isLast={true} level='60%' />
                </div>
             </div>
