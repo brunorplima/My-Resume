@@ -23,12 +23,14 @@
    .dv-s-image {
       flex: 1;
       font-size: 22pt;
-      position: relative;
+
+      .dv-image-icon {
+         flex: 1;
+      }
 
       .dv-s-shadow {
          width: 15px;
          background: linear-gradient(to left, #9dd795, rgba(255,255,255, 0));
-         position: absolute;
          height: 100%;
          top: 0;
          right: 0;
