@@ -9,7 +9,7 @@ const Intro = props => {
       <main id="intro" className="intro d-flex">
          <div className="profile d-flex flex-column align-items-center">
             <div className="profile-image">
-               <img src={profile} alt="Profile" />
+               {/* <img src={profile} alt="Profile" /> */}
             </div>
             <div className="profile-text">
                <h3 className="pt-center">Bruno Lima</h3>
