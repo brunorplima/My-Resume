@@ -85,6 +85,12 @@
    }
 }
 
+@media screen and (max-width: 767px) {
+   .exp-img-hover-button {
+      opacity: 1 !important;
+   }
+}
+
 @media screen and (max-width: 1100px) {
    .exp {
       flex-basis: 85% !important;
