@@ -1,6 +1,5 @@
 import React from 'react';
 import DownloadCVButton from '../util/DownloadCVButton';
-import profile from '../../images/profile_image_cropped.jpg';
 
 import './intro.scss';
 
