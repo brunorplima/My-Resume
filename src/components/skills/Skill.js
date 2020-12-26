@@ -53,14 +53,21 @@ const Skill = ({ skill, image, bgColor, icon, iconColor, fontSize, isLast, level
 
    return (
       <div ref={container} className='dv-skill-container d-flex' style={isLast ? { marginBottom: 0 } : {}}>
-         
+
          <div
             className='dv-s-image d-flex justify-content-center align-items-center'
             style={image ? { backgroundImage: `url(${image})`, backgroundPosition: 'center', backgroundSize: 'cover' } : { backgroundColor: bgColor }}
          >
             {!icon && <div style={{ flex: 1 }}></div>}
 
-            {icon && <div className='dv-image-icon d-flex justify-content-center align-items-center' style={{ color: iconColor, fontSize }}>{getIcon()}</div>}
+            {icon && 
+               <div 
+                  className='dv-image-icon d-flex justify-content-center align-items-center' 
+                  style={{ color: iconColor, fontSize, transform: 'translateX(.2rem)' }}
+               >
+                  {getIcon()}
+               </div>
+            }
 
             <div className='dv-s-shadow d-flex justify-content-center' style={level ? {} : { background: `linear-gradient(to left, ${bgColor}, rgba(255,255,255, 0))` }}></div>
          </div>
