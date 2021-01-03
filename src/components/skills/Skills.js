@@ -35,6 +35,7 @@ const Skills = () => {
                <div className="skills-container d-flex justify-content-around flex-wrap">
                   <Skill skill="Web Design" image={webDesign} level='65%'/>
                   <Skill skill="CSS/SCSS" icon='css' iconColor='#2965f1' bgColor='#D8D8D8' level='75%' />
+                  <Skill skill="Bootstrap" icon='bootstrap' iconColor='white' bgColor='#6d39b9' level='65%' />
                   <Skill skill="HTML" icon='html' iconColor='#e34c26' bgColor='#FFFFEA' level='80%' />
                   <Skill skill="Javascript/ES6" icon='js' iconColor='#f0db4f' bgColor='#333' level='85%' />
                   <Skill skill="Typescript" icon='ts' iconColor='#007acc' bgColor='#fff' level='80%' />

@@ -1,10 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { SiCss3 } from 'react-icons/si';
-import { SiHtml5 } from 'react-icons/si';
-import { SiJavascript, SiTypescript, SiNextDotJs } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiNextDotJs } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { DiGit } from 'react-icons/di';
+import { BsBootstrap } from 'react-icons/bs';
 
 
 import './skill.scss'
@@ -31,6 +30,8 @@ const Skill = ({ skill, image, bgColor, icon, iconColor, fontSize, isLast, level
       switch (icon) {
          case 'css':
             return <SiCss3 />
+         case 'bootstrap':
+            return <BsBootstrap />
          case 'html':
             return <SiHtml5 />;
          case 'js':

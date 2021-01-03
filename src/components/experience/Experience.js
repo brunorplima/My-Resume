@@ -39,7 +39,6 @@ const Experience = () => {
                      <li>Develop a database with all products data and other data essential to the correct functioning of the application</li>
                      <li>Maintain website and its database in order to ensure availability</li>
                      <li>Develop unit tests to ensure the correct functioning of the code logic</li>
-                     <li>Perform security and quality controls</li>
                   </ul>
                </div>
             </div>
